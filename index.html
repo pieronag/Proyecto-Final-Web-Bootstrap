@@ -6,38 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>Proyecto Final Bootstrap</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+
   </head>
   <body>
 
-    <script src="/js/bootstrap.js"></script>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Categories
+      </a>
 
-    <header class="p-2 bg-dark text-white">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#">Cat1</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Cat2</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Cat3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add category</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign in</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- This is what is not working well -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      John Doe
+    </a>
+
+        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item dropdown" href="#"> Edit settings </a>
+          <a class="dropdown-item" href="#"> Edit profile page </a>
+          <a class="dropdown-item" href="#"> Show profile page </a>
+          <a class="dropdown-item" href="#"> Create profile page </a>
+        </div>
+      </li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!--<header class="p-2 bg-dark text-white">
         <div class="container">
           <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li class="nav-item"><a href="#" class="nav-link text-danger px-2">Home</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 dropdown">
-                    <li><a href="#" class="nav-link px-2 text-white">Basic</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Medium</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white" >High</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Pro</a></li>
-                </ul>
+              <li class="nav-item dropdown">
+                <a href="#" id="dropdownMenu" class="nav-link px-2 text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Pricing</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                  <a href="" class="dropdown-item"></a>
+                  <a href="" class="dropdown-item"></a>
+                  <a href="" class="dropdown-item"></a>
+                  <a href="" class="dropdown-item"></a>
+                </div>
+              </li>
               <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
               <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-            </ul>
-    
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-              <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
-            </form>
+            </div>
           </div>
         </div>
-      </header>
-
+      </header>-->
+<!--
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -87,7 +149,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div>-->
 
   </body>
 </html>
